@@ -14,7 +14,7 @@ def get_root_path():
 
     change the path variable to the path of the dataset
     '''
-    path = "/home/pahelibhattacharya/Abhayv2/camera_ready/summarization/dataset"
+    path = "/kaggle/input/indian-doc-summary-dataset"
     return path
 
 def get_summary_data(dataset, train):
@@ -38,7 +38,7 @@ def get_summary_data(dataset, train):
                 data_source.append(a)
         return names, data_source, []
     
-    path = get_root_path() + '/Summary-Data-' + dataset + '/' + train + '-data/judgement'
+    path = get_root_path() + '/IN-Abs/train-data/judgement'
     all_files = glob.glob(path + "/*.txt")
     data_source = []
     names = []
@@ -48,7 +48,7 @@ def get_summary_data(dataset, train):
             names.append(filename[p+1:])
             a = f.read()
             data_source.append(a)
-    path = get_root_path() + '/Summary-Data-' + dataset + '/' + train + '-data/summary'
+    path = get_root_path() + '/IN-Abs/train-data/summary'
     all_files = glob.glob(path + "/*.txt")
     data_summary = []
     for filename in all_files:
@@ -128,7 +128,7 @@ def get_req_len_dict(dataset, istrain):
             dict_names[b[0] + ".txt"] = int(b[1])
         return dict_names 
     
-    f = open(get_root_path() + "/Summary-Data-"+ dataset +"/length-file-" + istrain +".txt", "r")
+    f = open(get_root_path() + f'/IN-Abs/train-data/stats-IN-train.txt', "r")
     a = (f.read())
     a = a.split("\n")
     dict_names = {}
