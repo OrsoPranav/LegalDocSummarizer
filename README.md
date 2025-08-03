@@ -79,7 +79,8 @@ The fine-tuned model showed significant improvements over the base model in summ
 * **Entailment and Summary Length**: The fine-tuned model consistently achieved higher entailment scores while maintaining a more appropriate summary length compared to the base model.
 
     [Steps vs Entailment]
-<img width="837" height="644" alt="image" src="https://github.com/user-attachments/assets/cb54d3af-0bb3-4ea5-8278-2905d6d013c3" />
+<img width="682" height="482" alt="image" src="https://github.com/user-attachments/assets/2b471d3e-8e6e-4f0d-8bdf-5e6dd74f3071" />
+
 
     [Steps vs Summary Length]
 <img width="685" height="483" alt="image" src="https://github.com/user-attachments/assets/3d78a123-0bb3-4786-92b0-8b5bdd71bee7" />
