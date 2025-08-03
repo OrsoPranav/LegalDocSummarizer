@@ -91,7 +91,8 @@ The fine-tuned model showed significant improvements over the base model in summ
 * **Performance on Different Document Lengths**: The fine-tuned model showed increasingly better performance over the base model as the input document length increased, with a 31.2% improvement for documents over 4,000 tokens. 
 
     [Performance by Document Length]
-<img width="1182" height="486" alt="image" src="https://github.com/user-attachments/assets/85ce6f93-c0a1-423f-9f20-b63710aee4af" />
+<img width="782" height="482" alt="image" src="https://github.com/user-attachments/assets/9c4f9c15-8645-4a21-a6fc-3d2f42af318e" />
+
 
 
 * **Hyperparameter Tuning**: A heatmap analysis of different LoRA ranks and KL divergence weights confirmed that a rank of 8 and a KL weight of 0.3 provided the best performance.
