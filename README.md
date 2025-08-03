@@ -74,24 +74,29 @@ The fine-tuned model showed significant improvements over the base model in summ
 
 * **Entailment and Summary Length**: The fine-tuned model consistently achieved higher entailment scores while maintaining a more appropriate summary length compared to the base model.
 
-    [Steps vs Entailment]<img width="837" height="644" alt="image" src="https://github.com/user-attachments/assets/cb54d3af-0bb3-4ea5-8278-2905d6d013c3" />
+    [Steps vs Entailment]
+<img width="837" height="644" alt="image" src="https://github.com/user-attachments/assets/cb54d3af-0bb3-4ea5-8278-2905d6d013c3" />
 
-    [Steps vs Summary Length]<img width="685" height="483" alt="image" src="https://github.com/user-attachments/assets/3d78a123-0bb3-4786-92b0-8b5bdd71bee7" />
+    [Steps vs Summary Length]
+<img width="685" height="483" alt="image" src="https://github.com/user-attachments/assets/3d78a123-0bb3-4786-92b0-8b5bdd71bee7" />
 
 
 * **Efficiency**: Using LoRA reduced the number of trainable parameters to just 0.8% of the original model, decreasing the training memory requirement from 24.8 GB to 9.8 GB and increasing the training speed by nearly four times.
 
-    [LoRA Memory and Speed Comparison]<img width="1182" height="486" alt="image" src="https://github.com/user-attachments/assets/e6c1f23d-d900-4c34-bad4-5562ffd9c668" />
+    [LoRA Memory and Speed Comparison]
+<img width="1182" height="486" alt="image" src="https://github.com/user-attachments/assets/e6c1f23d-d900-4c34-bad4-5562ffd9c668" />
 
 
 * **Performance on Different Document Lengths**: The fine-tuned model showed increasingly better performance over the base model as the input document length increased, with a 31.2% improvement for documents over 4,000 tokens. 
 
-    [Performance by Document Length]<img width="1182" height="486" alt="image" src="https://github.com/user-attachments/assets/85ce6f93-c0a1-423f-9f20-b63710aee4af" />
+    [Performance by Document Length]
+<img width="1182" height="486" alt="image" src="https://github.com/user-attachments/assets/85ce6f93-c0a1-423f-9f20-b63710aee4af" />
 
 
 * **Hyperparameter Tuning**: A heatmap analysis of different LoRA ranks and KL divergence weights confirmed that a rank of 8 and a KL weight of 0.3 provided the best performance.
 
-    [KL divergence weight against LoRA Rank]<img width="742" height="544" alt="image" src="https://github.com/user-attachments/assets/94dd7ab1-f506-4c86-8ecc-f56be3583ca3" />
+    [KL divergence weight against LoRA Rank]
+<img width="742" height="544" alt="image" src="https://github.com/user-attachments/assets/94dd7ab1-f506-4c86-8ecc-f56be3583ca3" />
 
 
 ### System II: Legal Question Answering
@@ -100,16 +105,20 @@ The RAG system was evaluated on a dataset of 1,897 unique question-answer pairs 
 
 * **Evaluation Metrics**:
     * **ROUGE Scores**: The system achieved average ROUGE-1, ROUGE-2, and ROUGE-L scores of 0.3, 0.18, and 0.27, respectively. The scores were impacted by the LLM generating longer answers than the ground truth. 
-        [Average ROUGE Scores]<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/500b64b4-494b-4b28-847e-2d5e77bfb8da" />
+        [Average ROUGE Scores]
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/500b64b4-494b-4b28-847e-2d5e77bfb8da" />
 
     * **BLEU Scores**: The BLEU scores varied, with some examples showing high scores (above 0.6) while most were moderate to low.
-        [Individual BLEU Scores]<img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/e0bced1f-acf2-4c56-bc5e-226581e21f77" />
+        [Individual BLEU Scores]
+<img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/e0bced1f-acf2-4c56-bc5e-226581e21f77" />
 
     * **Semantic Similarity**: The average cosine similarity score between generated and ground-truth answers was approximately 0.4. 
-        [Answer Relevancy Scores]<img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/7ba95349-9f7a-40f8-9592-aab5228068b1" />
+        [Answer Relevancy Scores]
+<img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/7ba95349-9f7a-40f8-9592-aab5228068b1" />
 
     * **Precision, Recall, and F1 Scores**: The average precision, recall, and F1-score were 0.32, 0.36, and 0.338, respectively.
-        [Precision, Recall, and F1 Scores]<img width="1200" height="600" alt="image" src="https://github.com/user-attachments/assets/94ef4ee9-56fa-4acc-b1c3-5bd8be2d6f8e" />
+        [Precision, Recall, and F1 Scores]
+<img width="1200" height="600" alt="image" src="https://github.com/user-attachments/assets/94ef4ee9-56fa-4acc-b1c3-5bd8be2d6f8e" />
 
     * **System Efficiency**: The document upload time showed a linear relationship with the number of chunks, while the RAG processing time remained relatively constant at around 1.15 seconds, indicating excellent query efficiency.
 
