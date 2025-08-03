@@ -1,7 +1,3 @@
-# LegalDocSummarizer
-
-Here is the README file content for your GitHub repository, formatted in Markdown and including the important images from the document.
-
 # Legal Text Question Answering and Summarization Using Reinforcement Learning
 
 Here we introduces a system for summarizing Indian legal texts and answering questions related to them. Given the complexity and length of legal documents in India, this tool aims to make legal information more accessible to the general public.
