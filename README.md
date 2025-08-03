@@ -34,7 +34,8 @@ This system fine-tunes a legal domain language model using Reinforcement Learnin
 
 The overall methodology for the summarization system is illustrated below:
 
-[Methodology for Fine-Tuning Legal-LED with LoRA + RL]<img width="1481" height="571" alt="image" src="https://github.com/user-attachments/assets/ebb1ac6f-6f68-4db6-938e-e2c60535a1f5" />
+[Methodology for Fine-Tuning Legal-LED with LoRA + RL]
+<img width="1481" height="571" alt="image" src="https://github.com/user-attachments/assets/ebb1ac6f-6f68-4db6-938e-e2c60535a1f5" />
 
 
 ### System II: Legal Question Answering
@@ -52,14 +53,17 @@ A Retrieval-Augmented Generation (RAG) approach is used for the question-answeri
 
 The question-answering workflows are depicted in the following diagram:
 
-[Methodology of Legal Question Answering]<img width="2100" height="1092" alt="image" src="https://github.com/user-attachments/assets/f5140694-328f-424d-abab-8e26a612e542" />
+[Methodology of Legal Question Answering]
+<img width="2100" height="1092" alt="image" src="https://github.com/user-attachments/assets/f5140694-328f-424d-abab-8e26a612e542" />
 
 
 ### Web-Based Frontend Tool
 
 A user-friendly web interface was developed using FastAPI for the backend and NextJS for the frontend, allowing users to upload documents, request summaries, and ask questions in real-time.
 
-[Frontend Interface for Legal Summary]<img width="837" height="644" alt="image" src="https://github.com/user-attachments/assets/41a1e941-1104-434b-964d-01549b3d1c17" />
+[Frontend Interface for Legal Summary - 1]
+<img width="837" height="644" alt="image" src="https://github.com/user-attachments/assets/41a1e941-1104-434b-964d-01549b3d1c17" />
+[Frontend Interface for Legal Summary - 2]
 <img width="1896" height="969" alt="image" src="https://github.com/user-attachments/assets/9304f89f-4c9c-4503-a0c1-630a12e5a87a" />
 
 
